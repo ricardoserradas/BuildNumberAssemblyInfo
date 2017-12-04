@@ -15,6 +15,3 @@ elseif($env:BUILD_SOURCEBRANCHNAME -ne "master"){
  Write-Output ("##vso[build.updatebuildnumber]" + $env:BUILD_BUILDNUMBER+"-$version")
  Write-Host "Entered here: alpha"
 }
-
-Write-Output ("##vso[task.setvariable variable=UnstableFlag;]$version")
-Write-Host "Set UnstableFlag as: $Env:UnstableFlag"
