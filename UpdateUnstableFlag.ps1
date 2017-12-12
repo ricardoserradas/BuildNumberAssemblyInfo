@@ -14,4 +14,4 @@ elseif($env:BUILD_SOURCEBRANCHNAME -ne "master")
 }
 
 Write-Output ("##vso[task.setvariable variable=UnstableFlag;]$version")
-Write-Host "Set UnstableFlag as: $Env:UnstableFlag"
+Write-Output "Set UnstableFlag as: $Env:UnstableFlag" -Verbose
